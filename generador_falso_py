@@ -1,0 +1,13 @@
+from faker import Faker
+
+# Crear instancia de Faker
+fake = Faker()
+
+# Número de datos que quieres generar
+cantidad = 100
+
+# Generar y mostrar nombres y correos falsos
+for _ in range(cantidad):
+    nombre = fake.name()
+    correo = fake.email()
+    print(f"Nombre: {nombre} - Correo: {correo}")
